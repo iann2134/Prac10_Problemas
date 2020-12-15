@@ -1,0 +1,29 @@
+/*
+Práctica 10                                 Ramírez Esquivel Iann Emmanuel
+14 de diciembre del 2020
+*/
+/*Programa que muestra el valor del numero ingresado como 
+un tipo de sucecion de fibonacci pero con la suma de los numeros
+impares positivos*/
+
+//Seleccion de libreria
+#include <stdio.h>
+//Declaracion de funcion
+int main(){
+	//Declaracion de variables
+	int N, CONT, AS;
+	AS=0;
+	CONT=1;
+	//Pedir el valor a ingresar
+	printf("TECLEA UN NUMERO: ");
+	//Escaneo y asignacion del valor a la variable
+	scanf("%i",&N);
+	//Funcion condicional para la suma de los valores impares
+	while(CONT<=N){
+		AS=(AS+CONT);
+		CONT=(CONT+2);
+	}
+	//Impresion del valor
+	printf("\nEL RESULTADO ES %i\n", AS);
+	return 0;
+}
